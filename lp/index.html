@@ -52,8 +52,8 @@ img{max-width:100%;height:auto;display:block;}
 .header-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--primary);}
 .header-logo span{font-size:24px;}
 .header-nav{display:flex;align-items:center;gap:24px;}
-.header-nav a{font-size:14px;font-weight:500;color:var(--text-2);}
-.header-nav a:hover{color:var(--primary);}
+.header-nav a{font-size:14px;font-weight:600;color:var(--primary);}
+.header-nav a:hover{color:var(--primary-dark);}
 .btn-cta{
   background:var(--accent);color:#fff;
   padding:10px 22px;border-radius:8px;
@@ -175,7 +175,7 @@ img{max-width:100%;height:auto;display:block;}
 .stat-label{font-size:12px;color:rgba(255,255,255,.8);font-weight:500;margin-top:2px;}
 
 /* ── Sections ── */
-.section{padding:80px 24px;}
+.section{padding:100px 24px;}
 .section-light{background:var(--bg);}
 .section-white{background:#fff;}
 .section-indigo{background:var(--primary-light);}
@@ -339,6 +339,33 @@ img{max-width:100%;height:auto;display:block;}
   border-radius:8px;padding:8px 12px;
   font-size:12px;color:var(--primary);font-weight:700;
 }
+
+/* ── Persona Cards ── */
+.persona-card{
+  background:#fff;border-radius:24px;
+  padding:44px 28px 36px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  transition:transform .2s,box-shadow .2s;
+}
+.persona-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.persona-avatar{
+  width:130px;height:130px;
+  border-radius:50%;overflow:hidden;
+  margin:0 auto 20px;
+  border:5px solid var(--primary-light);
+  box-shadow:0 6px 24px rgba(79,70,229,.18);
+}
+.persona-avatar img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.persona-tag{
+  display:inline-block;
+  background:var(--primary-light);color:var(--primary);
+  padding:5px 16px;border-radius:100px;
+  font-size:12px;font-weight:700;
+  margin-bottom:12px;
+}
+.persona-title{font-size:20px;font-weight:800;color:var(--text);margin-bottom:14px;line-height:1.35;}
+.persona-desc{font-size:14px;color:var(--text-2);line-height:1.85;text-align:left;}
 
 /* ── Photo Gallery ── */
 .photo-grid{
@@ -738,56 +765,30 @@ footer{
       <p class="section-sub">学生・社会人・教育者、あらゆる学習シーンに対応</p>
     </div>
     <div class="recommend-grid">
-      <div class="recommend-card">
-        <div class="recommend-photo">
+      <div class="persona-card">
+        <div class="persona-avatar">
           <img src="../assets/photos/photo_02.jpg" alt="成績を上げたい学生">
         </div>
-        <div class="recommend-body">
-          <div class="recommend-tag">学生向け</div>
-          <div class="recommend-title">成績を上げたい学生</div>
-          <div class="recommend-desc">定期テスト・受験勉強に最適な学習法を診断。教科別のアドバイスで効率を最大化します。</div>
-        </div>
+        <div class="persona-tag">学生向け</div>
+        <div class="persona-title">成績を上げたい学生</div>
+        <div class="persona-desc">定期テスト・受験勉強に最適な学習法を診断。教科別のアドバイスで効率を最大化。自分に合った暗記法・問題演習法が明確になります。</div>
       </div>
-      <div class="recommend-card">
-        <div class="recommend-photo">
+      <div class="persona-card">
+        <div class="persona-avatar">
           <img src="../assets/photos/photo_03.jpg" alt="資格を取りたい社会人">
         </div>
-        <div class="recommend-body">
-          <div class="recommend-tag">社会人向け</div>
-          <div class="recommend-title">資格・スキルアップを目指す方</div>
-          <div class="recommend-desc">限られた時間で最大の効果を上げるための勉強法を提案。TOEIC・簿記・ITパスポートなど対応。</div>
-        </div>
+        <div class="persona-tag">社会人向け</div>
+        <div class="persona-title">資格・スキルアップを目指す方</div>
+        <div class="persona-desc">限られた時間で最大の効果を上げるための勉強法を提案。TOEIC・簿記・ITパスポートなど、目標達成への最短ルートを診断します。</div>
       </div>
-      <div class="recommend-card">
-        <div class="recommend-photo">
+      <div class="persona-card">
+        <div class="persona-avatar">
           <img src="../assets/photos/photo_04.jpg" alt="効果的に教えたい教育者">
         </div>
-        <div class="recommend-body">
-          <div class="recommend-tag">教育者向け</div>
-          <div class="recommend-title">効果的に教えたい教育者</div>
-          <div class="recommend-desc">生徒の学習スタイルを理解して指導法を最適化。個別指導・塾講師・家庭教師の方にも。</div>
-        </div>
+        <div class="persona-tag">教育者向け</div>
+        <div class="persona-title">効果的に教えたい教育者</div>
+        <div class="persona-desc">生徒の学習スタイルを理解して指導法を最適化。個別指導・塾講師・家庭教師の方も、生徒ひとりひとりに合った教え方が見つかります。</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Photo Gallery / 利用シーン -->
-<section class="section section-white">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-eyebrow">USAGE SCENES</div>
-      <h2 class="section-h2">さまざまな<span>学習シーン</span>で活躍</h2>
-    </div>
-    <div class="photo-grid">
-      <div class="photo-item"><img src="../assets/photos/photo_10.jpg" alt="家での学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_11.jpg" alt="カフェでの学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_12.jpg" alt="図書館での学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_13.jpg" alt="スマホで学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_14.jpg" alt="グループ学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_15.jpg" alt="夜間学習"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_16.jpg" alt="資格勉強"></div>
-      <div class="photo-item"><img src="../assets/photos/photo_17.jpg" alt="オンライン学習"></div>
     </div>
   </div>
 </section>
@@ -867,19 +868,6 @@ footer{
           <div style="font-size:14px;color:var(--text-2);">診断後すぐに使える具体的な勉強法・ツールを提案します。</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Photo gallery 2 -->
-<section class="section section-light">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;">
-      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_21.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
-      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_22.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
-      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_15.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
-      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_16.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
-      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_17.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
     </div>
   </div>
 </section>
