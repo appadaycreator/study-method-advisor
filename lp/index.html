@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【無料診断】あなたの学習スタイルを診断｜最適な勉強法を7分で発見</title>
+<meta name="description" content="5つの学習軸から診断。ポモドーロ・マインドマップ等、あなた専用の勉強法提案。実例・ツール推奨も無料。登録不要・完全無料で即利用可能。">
+<meta name="author" content="AppADayCreator">
+<link rel="canonical" href="https://appadaycreator.com/study-method-advisor/lp/">
+<meta property="og:title" content="【無料診断】あなたの学習スタイルを診断｜最適な勉強法を7分で発見">
+<meta property="og:description" content="5つの学習軸から診断。ポモドーロ・マインドマップ等、あなた専用の勉強法提案。実例・ツール推奨も無料。">
+<meta property="og:url" content="https://appadaycreator.com/study-method-advisor/lp/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://appadaycreator.com/study-method-advisor/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【無料診断】あなたの学習スタイルを診断｜最適な勉強法を7分で発見">
+<meta name="twitter:image" content="https://appadaycreator.com/study-method-advisor/ogp.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --primary:#4F46E5;
+  --primary-dark:#3730A3;
+  --primary-light:#EEF2FF;
+  --accent:#10B981;
+  --accent-dark:#059669;
+  --text:#1E293B;
+  --text-2:#475569;
+  --text-3:#94A3B8;
+  --border:#E2E8F0;
+  --bg:#F8FAFC;
+  --white:#FFFFFF;
+  --shadow:0 4px 24px rgba(79,70,229,.10);
+  --shadow-lg:0 8px 40px rgba(79,70,229,.14);
+}
+body{font-family:'Inter','Noto Sans JP',sans-serif;color:var(--text);background:#fff;line-height:1.6;font-size:16px;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;height:auto;display:block;}
+
+/* ── Header ── */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  padding:0 24px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;
+  box-shadow:0 1px 8px rgba(0,0,0,.06);
+}
+.header-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--primary);}
+.header-logo span{font-size:24px;}
+.header-nav{display:flex;align-items:center;gap:24px;}
+.header-nav a{font-size:14px;font-weight:500;color:var(--text-2);}
+.header-nav a:hover{color:var(--primary);}
+.btn-cta{
+  background:var(--accent);color:#fff;
+  padding:10px 22px;border-radius:8px;
+  font-size:14px;font-weight:700;
+  transition:background .2s,transform .15s;
+  display:inline-block;
+}
+.btn-cta:hover{background:var(--accent-dark);transform:translateY(-1px);}
+.btn-primary{
+  background:var(--primary);color:#fff;
+  padding:16px 32px;border-radius:10px;
+  font-size:17px;font-weight:700;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:background .2s,transform .15s,box-shadow .15s;
+  box-shadow:0 4px 16px rgba(79,70,229,.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 24px rgba(79,70,229,.4);}
+.btn-secondary{
+  background:transparent;color:var(--primary);
+  padding:14px 28px;border-radius:10px;
+  font-size:15px;font-weight:600;
+  border:2px solid var(--primary);
+  display:inline-block;
+  transition:all .2s;
+}
+.btn-secondary:hover{background:var(--primary-light);}
+.btn-accent-lg{
+  background:var(--accent);color:#fff;
+  padding:18px 48px;border-radius:12px;
+  font-size:18px;font-weight:800;
+  display:inline-flex;align-items:center;gap:10px;
+  transition:background .2s,transform .15s,box-shadow .15s;
+  box-shadow:0 6px 24px rgba(16,185,129,.35);
+}
+.btn-accent-lg:hover{background:var(--accent-dark);transform:translateY(-2px);}
+
+/* ── Hero ── */
+.hero{
+  min-height:calc(100vh - 64px);
+  display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:0;
+  overflow:hidden;
+}
+.hero-left{
+  padding:64px 56px 64px 64px;
+  display:flex;flex-direction:column;gap:24px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--primary-light);color:var(--primary);
+  padding:6px 16px;border-radius:100px;
+  font-size:13px;font-weight:700;
+  width:fit-content;
+}
+.hero-badge::before{content:'✦';font-size:10px;}
+.hero-eyebrow{font-size:17px;font-weight:600;color:var(--text-2);line-height:1.5;}
+.hero-h1{font-size:52px;font-weight:800;color:var(--text);line-height:1.15;letter-spacing:-0.02em;}
+.hero-h1 span{color:var(--primary);}
+.hero-desc{font-size:17px;color:var(--text-2);line-height:1.8;max-width:480px;}
+.hero-cta-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.hero-rating{
+  display:flex;align-items:center;gap:8px;
+  font-size:14px;color:var(--text-2);
+}
+.hero-stars{color:#F59E0B;font-size:16px;letter-spacing:1px;}
+.hero-rating strong{color:var(--text);font-weight:700;}
+.hero-right{
+  position:relative;height:100%;min-height:600px;overflow:hidden;
+}
+.hero-photo{
+  width:100%;height:100%;object-fit:cover;
+  position:absolute;inset:0;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(79,70,229,.15) 0%,rgba(16,185,129,.05) 100%);
+}
+.hero-card{
+  position:absolute;bottom:48px;left:32px;right:32px;
+  background:rgba(255,255,255,.97);
+  border-radius:20px;
+  padding:24px;
+  box-shadow:0 16px 48px rgba(0,0,0,.18);
+  backdrop-filter:blur(8px);
+}
+.hero-card-title{font-size:13px;color:var(--text-3);font-weight:600;margin-bottom:10px;}
+.hero-card-type{font-size:22px;font-weight:800;color:var(--primary);margin-bottom:4px;}
+.hero-card-score{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:12px;
+}
+.hero-card-score-num{
+  font-size:56px;font-weight:800;color:var(--primary);line-height:1;
+}
+.hero-card-score-label{font-size:13px;color:var(--text-2);}
+.hero-card-bar{background:#E2E8F0;border-radius:100px;height:8px;margin-bottom:6px;}
+.hero-card-bar-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--primary),#818CF8);}
+.hero-card-axes{
+  display:flex;gap:6px;flex-wrap:wrap;
+  margin-top:8px;
+}
+.hero-card-axis{
+  background:var(--primary-light);color:var(--primary);
+  padding:3px 10px;border-radius:100px;
+  font-size:11px;font-weight:700;
+}
+
+/* ── Stats bar ── */
+.stats-bar{
+  background:var(--primary);
+  display:grid;grid-template-columns:repeat(4,1fr);
+  text-align:center;
+  padding:24px;gap:0;
+}
+.stat-item{padding:4px 16px;border-right:1px solid rgba(255,255,255,.2);}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-size:28px;font-weight:800;color:#fff;line-height:1.2;}
+.stat-label{font-size:12px;color:rgba(255,255,255,.8);font-weight:500;margin-top:2px;}
+
+/* ── Sections ── */
+.section{padding:80px 24px;}
+.section-light{background:var(--bg);}
+.section-white{background:#fff;}
+.section-indigo{background:var(--primary-light);}
+.container{max-width:1100px;margin:0 auto;}
+.section-head{text-align:center;margin-bottom:56px;}
+.section-eyebrow{
+  display:inline-block;
+  background:var(--primary-light);color:var(--primary);
+  padding:4px 14px;border-radius:100px;
+  font-size:12px;font-weight:700;
+  margin-bottom:12px;
+  letter-spacing:.05em;
+}
+.section-h2{font-size:36px;font-weight:800;color:var(--text);line-height:1.25;margin-bottom:12px;}
+.section-h2 span{color:var(--primary);}
+.section-sub{font-size:17px;color:var(--text-2);}
+
+/* ── 5 Axes ── */
+.axes-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.axis-card{
+  background:#fff;border-radius:20px;
+  padding:28px 20px 24px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  transition:transform .2s,box-shadow .2s;
+  border:2px solid transparent;
+}
+.axis-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--primary);}
+.axis-icon{
+  width:64px;height:64px;
+  margin:0 auto 16px;
+  border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.axis-icon img{width:40px;height:40px;object-fit:contain;}
+.axis-card-name{font-size:16px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.axis-card-desc{font-size:13px;color:var(--text-2);line-height:1.6;}
+.axis-color-1{background:#EDE9FE;}
+.axis-color-2{background:#DBEAFE;}
+.axis-color-3{background:#D1FAE5;}
+.axis-color-4{background:#FEF3C7;}
+.axis-color-5{background:#FCE7F3;}
+
+/* ── Steps ── */
+.steps-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:32px;
+}
+.step-card{
+  background:#fff;border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .2s;
+}
+.step-card:hover{transform:translateY(-4px);}
+.step-photo{height:200px;overflow:hidden;}
+.step-photo img{width:100%;height:100%;object-fit:cover;}
+.step-body{padding:24px;}
+.step-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:36px;
+  background:var(--primary);color:#fff;
+  border-radius:50%;font-size:15px;font-weight:800;
+  margin-bottom:12px;
+}
+.step-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.step-desc{font-size:14px;color:var(--text-2);line-height:1.7;}
+.step-time{
+  display:inline-flex;align-items:center;gap:4px;
+  background:var(--primary-light);color:var(--primary);
+  padding:4px 10px;border-radius:100px;
+  font-size:12px;font-weight:600;
+  margin-top:12px;
+}
+
+/* ── Result Section ── */
+.result-section{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:48px;align-items:center;
+}
+.result-mockup{
+  background:var(--primary-light);border-radius:24px;
+  padding:32px;
+  box-shadow:var(--shadow-lg);
+  position:relative;overflow:hidden;
+}
+.result-mockup::before{
+  content:'';position:absolute;top:-40px;right:-40px;
+  width:160px;height:160px;
+  background:rgba(79,70,229,.08);border-radius:50%;
+}
+.result-type{font-size:13px;color:var(--text-3);font-weight:600;margin-bottom:6px;}
+.result-name{font-size:28px;font-weight:800;color:var(--primary);margin-bottom:4px;}
+.result-score-row{display:flex;align-items:flex-end;gap:8px;margin-bottom:20px;}
+.result-score-big{font-size:72px;font-weight:800;color:var(--primary);line-height:1;}
+.result-score-unit{font-size:20px;font-weight:600;color:var(--text-2);padding-bottom:8px;}
+.result-radar{margin:20px 0;text-align:center;}
+.result-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.result-tag{background:var(--primary);color:#fff;padding:4px 12px;border-radius:100px;font-size:12px;font-weight:700;}
+.result-tag-light{background:rgba(79,70,229,.12);color:var(--primary);padding:4px 12px;border-radius:100px;font-size:12px;font-weight:700;}
+.result-info{display:flex;flex-direction:column;gap:24px;}
+.result-point{display:flex;gap:16px;align-items:flex-start;}
+.result-point-icon{
+  width:48px;height:48px;min-width:48px;
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.result-point-icon img{width:28px;height:28px;object-fit:contain;}
+.result-point-body{}
+.result-point-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px;}
+.result-point-desc{font-size:14px;color:var(--text-2);line-height:1.7;}
+
+/* ── Recommend ── */
+.recommend-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.recommend-card{
+  background:#fff;border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .2s,box-shadow .2s;
+}
+.recommend-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.recommend-photo{height:220px;overflow:hidden;}
+.recommend-photo img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.recommend-card:hover .recommend-photo img{transform:scale(1.05);}
+.recommend-body{padding:20px;}
+.recommend-tag{
+  display:inline-block;
+  background:var(--primary-light);color:var(--primary);
+  padding:3px 10px;border-radius:100px;
+  font-size:11px;font-weight:700;
+  margin-bottom:10px;
+}
+.recommend-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.recommend-desc{font-size:13px;color:var(--text-2);line-height:1.7;}
+
+/* ── Testimonials ── */
+.testimonial-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.testimonial-card{
+  background:#fff;border-radius:20px;padding:24px;
+  box-shadow:var(--shadow);
+}
+.testimonial-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.testimonial-photo{width:48px;height:48px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.testimonial-photo img{width:100%;height:100%;object-fit:cover;}
+.testimonial-name{font-size:14px;font-weight:700;color:var(--text);}
+.testimonial-role{font-size:12px;color:var(--text-3);}
+.testimonial-stars{color:#F59E0B;font-size:14px;margin-bottom:8px;}
+.testimonial-text{font-size:14px;color:var(--text-2);line-height:1.75;}
+.testimonial-result{
+  margin-top:12px;
+  background:var(--primary-light);
+  border-radius:8px;padding:8px 12px;
+  font-size:12px;color:var(--primary);font-weight:700;
+}
+
+/* ── Photo Gallery ── */
+.photo-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.photo-item{border-radius:16px;overflow:hidden;aspect-ratio:1;box-shadow:var(--shadow);}
+.photo-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.photo-item:hover img{transform:scale(1.05);}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:12px;}
+.faq-item{
+  background:#fff;border-radius:16px;
+  border:1px solid var(--border);
+  overflow:hidden;
+}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 24px;cursor:pointer;
+  font-size:16px;font-weight:700;color:var(--text);
+  gap:16px;
+  transition:background .15s;
+}
+.faq-q:hover{background:var(--bg);}
+.faq-q-icon{
+  width:28px;height:28px;min-width:28px;
+  border-radius:50%;background:var(--primary-light);color:var(--primary);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:700;transition:transform .2s;
+}
+.faq-item.open .faq-q-icon{transform:rotate(45deg);}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .3s ease,padding .2s;
+  font-size:15px;color:var(--text-2);line-height:1.8;
+}
+.faq-item.open .faq-a{max-height:300px;padding:0 24px 20px;}
+
+/* ── Bottom CTA ── */
+.bottom-cta{
+  background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+  padding:80px 24px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.bottom-cta::before{
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:300px;height:300px;border-radius:50%;
+  background:rgba(255,255,255,.06);
+}
+.bottom-cta::after{
+  content:'';position:absolute;bottom:-60px;left:-60px;
+  width:200px;height:200px;border-radius:50%;
+  background:rgba(255,255,255,.04);
+}
+.bottom-cta-label{font-size:13px;color:rgba(255,255,255,.7);font-weight:600;margin-bottom:10px;letter-spacing:.1em;}
+.bottom-cta-h2{font-size:38px;font-weight:800;color:#fff;line-height:1.3;margin-bottom:12px;}
+.bottom-cta-sub{font-size:17px;color:rgba(255,255,255,.85);margin-bottom:36px;}
+.bottom-cta-btn{
+  background:#fff;color:var(--primary);
+  padding:18px 56px;border-radius:12px;
+  font-size:18px;font-weight:800;
+  display:inline-flex;align-items:center;gap:10px;
+  box-shadow:0 8px 32px rgba(0,0,0,.15);
+  transition:transform .15s,box-shadow .15s;
+}
+.bottom-cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.2);}
+.bottom-cta-note{font-size:13px;color:rgba(255,255,255,.6);margin-top:16px;}
+
+/* ── Footer ── */
+footer{
+  background:#1E293B;color:#94A3B8;
+  padding:40px 24px 24px;text-align:center;
+}
+.footer-logo{font-size:18px;font-weight:800;color:#fff;margin-bottom:16px;}
+.footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+.footer-links a{font-size:13px;color:#94A3B8;}
+.footer-links a:hover{color:#fff;}
+.footer-copy{font-size:12px;opacity:.6;}
+
+/* ── Responsive ── */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;}
+  .hero-right{min-height:360px;}
+  .hero-left{padding:48px 32px;}
+  .hero-h1{font-size:40px;}
+  .axes-grid{grid-template-columns:repeat(3,1fr);}
+  .stats-bar{grid-template-columns:repeat(2,1fr);gap:0;}
+}
+@media(max-width:768px){
+  .hero-left{padding:40px 20px;}
+  .hero-h1{font-size:32px;}
+  .hero-eyebrow{font-size:15px;}
+  .axes-grid{grid-template-columns:repeat(2,1fr);}
+  .steps-grid{grid-template-columns:1fr;}
+  .result-section{grid-template-columns:1fr;}
+  .recommend-grid{grid-template-columns:1fr;}
+  .testimonial-grid{grid-template-columns:1fr;}
+  .photo-grid{grid-template-columns:repeat(2,1fr);}
+  .section{padding:56px 20px;}
+  .section-h2{font-size:28px;}
+  .bottom-cta-h2{font-size:28px;}
+  .btn-primary{font-size:15px;padding:14px 24px;}
+  .header-nav .nav-links{display:none;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);}
+  .stat-item{border:none;}
+}
+@media(max-width:480px){
+  .hero-h1{font-size:26px;}
+  .axes-grid{grid-template-columns:1fr 1fr;}
+  .photo-grid{grid-template-columns:repeat(2,1fr);}
+  .hero-cta-row{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <a href="/study-method-advisor/lp/" class="header-logo">
+    <span>📚</span>
+    学習スタイル診断
+  </a>
+  <nav class="header-nav">
+    <div class="nav-links" style="display:flex;align-items:center;gap:24px;">
+      <a href="#how">使い方</a>
+      <a href="#faq">FAQ</a>
+      <a href="#result">診断結果例</a>
+    </div>
+    <a href="/study-method-advisor/" class="btn-cta">今すぐ診断する</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">AI × 認知科学 × 学習心理学</div>
+    <p class="hero-eyebrow">無料で3分、あなたに合う勉強法がわかる</p>
+    <h1 class="hero-h1">学習スタイル<span>診断</span></h1>
+    <p class="hero-desc">5つの学習軸から、あなたに最適な勉強法を科学的に診断します。ポモドーロ・アクティブリコール・スペーシング学習など、あなただけのメソッドを提案。</p>
+    <div class="hero-cta-row">
+      <a href="/study-method-advisor/" class="btn-primary">今すぐ診断する →</a>
+      <a href="#how" class="btn-secondary">使い方を見る</a>
+    </div>
+    <div class="hero-rating">
+      <span class="hero-stars">★★★★★</span>
+      <strong>4.9</strong>
+      <span>（2,847人が利用済み）</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="../assets/photos/photo_01.jpg" alt="学習スタイル診断ヒーロー" class="hero-photo">
+    <div class="hero-overlay"></div>
+    <div class="hero-card">
+      <div class="hero-card-title">診断結果プレビュー</div>
+      <div class="hero-card-type">あなたの学習タイプ</div>
+      <div class="hero-card-score">
+        <div>
+          <div style="font-size:14px;font-weight:700;color:#4F46E5;margin-bottom:4px;">視覚理解型</div>
+          <div class="hero-card-score-num">92</div>
+        </div>
+        <div style="flex:1;">
+          <div style="font-size:12px;color:#94A3B8;margin-bottom:8px;">スタイル適合度</div>
+          <div class="hero-card-bar"><div class="hero-card-bar-fill" style="width:92%"></div></div>
+          <div style="font-size:12px;color:#4F46E5;font-weight:600;margin-top:4px;">92 / 100</div>
+        </div>
+      </div>
+      <div class="hero-card-axes">
+        <span class="hero-card-axis">ポモドーロ</span>
+        <span class="hero-card-axis">マインドマップ</span>
+        <span class="hero-card-axis">視覚学習</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats bar -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">2,847<span style="font-size:16px;font-weight:600;">人</span></div>
+    <div class="stat-label">累計利用者数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5<span style="font-size:16px;font-weight:600;">軸</span></div>
+    <div class="stat-label">診断軸の数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">3<span style="font-size:16px;font-weight:600;">分</span></div>
+    <div class="stat-label">診断所要時間</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">4.9<span style="font-size:16px;color:#F59E0B;">★</span></div>
+    <div class="stat-label">ユーザー満足度</div>
+  </div>
+</div>
+
+<!-- 5 Axes Section -->
+<section class="section section-white" id="axes">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">DIAGNOSTIC AXES</div>
+      <h2 class="section-h2">5つの視点で<span>学び方</span>を可視化</h2>
+      <p class="section-sub">認知科学・教育心理学に基づいた5つの指標で、あなた独自の学習スタイルを数値化します</p>
+    </div>
+    <div class="axes-grid">
+      <div class="axis-card">
+        <div class="axis-icon axis-color-1">
+          <img src="../assets/icons/split/01-01.png" alt="視覚軸">
+        </div>
+        <div class="axis-card-name">視覚</div>
+        <div class="axis-card-desc">図解・動画・マインドマップで理解を深めるタイプ</div>
+      </div>
+      <div class="axis-card">
+        <div class="axis-icon axis-color-2">
+          <img src="../assets/icons/split/01-02.png" alt="聴覚軸">
+        </div>
+        <div class="axis-card-name">聴覚</div>
+        <div class="axis-card-desc">音声・音読・ポッドキャストで効率よく吸収するタイプ</div>
+      </div>
+      <div class="axis-card">
+        <div class="axis-icon axis-color-3">
+          <img src="../assets/icons/split/01-03.png" alt="触覚軸">
+        </div>
+        <div class="axis-card-name">触覚・実践</div>
+        <div class="axis-card-desc">手を動かし、体験しながら身につけるタイプ</div>
+      </div>
+      <div class="axis-card">
+        <div class="axis-icon axis-color-4">
+          <img src="../assets/icons/split/01-05.png" alt="時間管理軸">
+        </div>
+        <div class="axis-card-name">時間管理</div>
+        <div class="axis-card-desc">スケジュール管理と集中時間のコントロールが得意なタイプ</div>
+      </div>
+      <div class="axis-card">
+        <div class="axis-icon axis-color-5">
+          <img src="../assets/icons/split/01-06.png" alt="記憶軸">
+        </div>
+        <div class="axis-card-name">記憶・思考</div>
+        <div class="axis-card-desc">反復・間隔反復で記憶を定着させるタイプ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section section-light" id="how">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">HOW IT WORKS</div>
+      <h2 class="section-h2"><span>診断の流れ</span></h2>
+      <p class="section-sub">わずか3ステップで、あなただけの学習スタイルを発見</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-photo">
+          <img src="../assets/photos/photo_07.jpg" alt="質問に答えるステップ">
+        </div>
+        <div class="step-body">
+          <div class="step-num">1</div>
+          <div class="step-title">質問に答える</div>
+          <div class="step-desc">5つの質問に直感で答えるだけ。学習の目的・時間・悩みを選択形式で回答します。</div>
+          <div class="step-time">⏱ 約1〜3分</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-photo">
+          <img src="../assets/photos/photo_08.jpg" alt="AIが分析するステップ">
+        </div>
+        <div class="step-body">
+          <div class="step-num">2</div>
+          <div class="step-title">AIが分析</div>
+          <div class="step-desc">5つの学習軸からあなたの回答をスコアリング。認知科学に基づいてスタイルを特定します。</div>
+          <div class="step-time">⚡ 瞬時に算出</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-photo">
+          <img src="../assets/photos/photo_09.jpg" alt="学習法を受け取るステップ">
+        </div>
+        <div class="step-body">
+          <div class="step-num">3</div>
+          <div class="step-title">学習法を受け取る</div>
+          <div class="step-desc">あなたの学習タイプ・スコア・具体的な勉強法のアドバイスを即時表示。すぐに実践できます。</div>
+          <div class="step-time">✅ 今すぐ実践</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="/study-method-advisor/" class="btn-primary">診断を始める →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Result example -->
+<section class="section section-white" id="result">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">RESULT EXAMPLE</div>
+      <h2 class="section-h2">診断すると、<span>こんな結果</span>が届きます</h2>
+      <p class="section-sub">具体的な学習法・ツール・習慣まで、あなた専用のアドバイスを提供</p>
+    </div>
+    <div class="result-section">
+      <div class="result-mockup">
+        <div class="result-type">あなたの学習タイプ</div>
+        <div class="result-name">視覚理解型</div>
+        <div class="result-score-row">
+          <div class="result-score-big">92</div>
+          <div class="result-score-unit">点</div>
+          <div style="margin-left:8px;">
+            <div style="font-size:13px;color:#475569;">スタイル適合度</div>
+            <div style="font-size:12px;color:#10B981;font-weight:700;">▲ 上位5%</div>
+          </div>
+        </div>
+        <!-- Radar chart mockup -->
+        <div style="background:#fff;border-radius:16px;padding:20px;margin-bottom:16px;">
+          <div style="text-align:center;font-size:13px;color:#94A3B8;margin-bottom:12px;">📊 学習スタイル親和性スコア</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;"><span style="display:flex;align-items:center;gap:6px;"><img src="../assets/icons/split/01-01.png" style="width:16px;height:16px;"> 視覚</span><strong style="color:#4F46E5;">92</strong></div>
+              <div style="height:8px;background:#E2E8F0;border-radius:4px;"><div style="width:92%;height:100%;background:linear-gradient(90deg,#4F46E5,#818CF8);border-radius:4px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;"><span style="display:flex;align-items:center;gap:6px;"><img src="../assets/icons/split/01-02.png" style="width:16px;height:16px;"> 聴覚</span><strong style="color:#4F46E5;">68</strong></div>
+              <div style="height:8px;background:#E2E8F0;border-radius:4px;"><div style="width:68%;height:100%;background:linear-gradient(90deg,#4F46E5,#818CF8);border-radius:4px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;"><span style="display:flex;align-items:center;gap:6px;"><img src="../assets/icons/split/01-03.png" style="width:16px;height:16px;"> 実践</span><strong style="color:#4F46E5;">74</strong></div>
+              <div style="height:8px;background:#E2E8F0;border-radius:4px;"><div style="width:74%;height:100%;background:linear-gradient(90deg,#4F46E5,#818CF8);border-radius:4px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;"><span style="display:flex;align-items:center;gap:6px;"><img src="../assets/icons/split/01-05.png" style="width:16px;height:16px;"> 時間管理</span><strong style="color:#4F46E5;">55</strong></div>
+              <div style="height:8px;background:#E2E8F0;border-radius:4px;"><div style="width:55%;height:100%;background:linear-gradient(90deg,#4F46E5,#818CF8);border-radius:4px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;"><span style="display:flex;align-items:center;gap:6px;"><img src="../assets/icons/split/01-06.png" style="width:16px;height:16px;"> 記憶</span><strong style="color:#4F46E5;">80</strong></div>
+              <div style="height:8px;background:#E2E8F0;border-radius:4px;"><div style="width:80%;height:100%;background:linear-gradient(90deg,#4F46E5,#818CF8);border-radius:4px;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-tags">
+          <span class="result-tag">マインドマップ</span>
+          <span class="result-tag-light">動画学習</span>
+          <span class="result-tag-light">図解ノート</span>
+        </div>
+      </div>
+      <div class="result-info">
+        <div class="result-point">
+          <div class="result-point-icon" style="background:#EDE9FE;">
+            <img src="../assets/icons/split/02-06.png" alt="具体的な学習法">
+          </div>
+          <div class="result-point-body">
+            <div class="result-point-title">具体的な学習法を提案</div>
+            <div class="result-point-desc">あなたのタイプに合った勉強法（ポモドーロ・アクティブリコール・スペーシング学習など）を詳しく解説します。</div>
+          </div>
+        </div>
+        <div class="result-point">
+          <div class="result-point-icon" style="background:#D1FAE5;">
+            <img src="../assets/icons/split/03-07.png" alt="推奨ツール">
+          </div>
+          <div class="result-point-body">
+            <div class="result-point-title">推奨アプリ・ツールを紹介</div>
+            <div class="result-point-desc">Anki・Forest・MindMeisterなど、あなたのスタイルに合ったツールを厳選して提案します。</div>
+          </div>
+        </div>
+        <div class="result-point">
+          <div class="result-point-icon" style="background:#FEF3C7;">
+            <img src="../assets/icons/split/04-04.png" alt="バッジ">
+          </div>
+          <div class="result-point-body">
+            <div class="result-point-title">スコアと改善のヒント</div>
+            <div class="result-point-desc">5軸のスコアと、あなたの弱点を補う習慣・改善ポイントをアドバイスします。</div>
+          </div>
+        </div>
+        <div class="result-point">
+          <div class="result-point-icon" style="background:#FCE7F3;">
+            <img src="../assets/icons/split/01-07.png" alt="シェア">
+          </div>
+          <div class="result-point-body">
+            <div class="result-point-title">診断結果をシェアできる</div>
+            <div class="result-point-desc">X（Twitter）やLINEで友人・クラスメートにシェアして、一緒に学習スタイルを比較できます。</div>
+          </div>
+        </div>
+        <a href="/study-method-advisor/" class="btn-primary" style="align-self:flex-start;">自分の診断結果を見る →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- こんな方におすすめ -->
+<section class="section section-indigo">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">WHO IS IT FOR</div>
+      <h2 class="section-h2">こんな方に<span>おすすめ</span></h2>
+      <p class="section-sub">学生・社会人・教育者、あらゆる学習シーンに対応</p>
+    </div>
+    <div class="recommend-grid">
+      <div class="recommend-card">
+        <div class="recommend-photo">
+          <img src="../assets/photos/photo_02.jpg" alt="成績を上げたい学生">
+        </div>
+        <div class="recommend-body">
+          <div class="recommend-tag">学生向け</div>
+          <div class="recommend-title">成績を上げたい学生</div>
+          <div class="recommend-desc">定期テスト・受験勉強に最適な学習法を診断。教科別のアドバイスで効率を最大化します。</div>
+        </div>
+      </div>
+      <div class="recommend-card">
+        <div class="recommend-photo">
+          <img src="../assets/photos/photo_03.jpg" alt="資格を取りたい社会人">
+        </div>
+        <div class="recommend-body">
+          <div class="recommend-tag">社会人向け</div>
+          <div class="recommend-title">資格・スキルアップを目指す方</div>
+          <div class="recommend-desc">限られた時間で最大の効果を上げるための勉強法を提案。TOEIC・簿記・ITパスポートなど対応。</div>
+        </div>
+      </div>
+      <div class="recommend-card">
+        <div class="recommend-photo">
+          <img src="../assets/photos/photo_04.jpg" alt="効果的に教えたい教育者">
+        </div>
+        <div class="recommend-body">
+          <div class="recommend-tag">教育者向け</div>
+          <div class="recommend-title">効果的に教えたい教育者</div>
+          <div class="recommend-desc">生徒の学習スタイルを理解して指導法を最適化。個別指導・塾講師・家庭教師の方にも。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery / 利用シーン -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">USAGE SCENES</div>
+      <h2 class="section-h2">さまざまな<span>学習シーン</span>で活躍</h2>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-item"><img src="../assets/photos/photo_10.jpg" alt="家での学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_11.jpg" alt="カフェでの学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_12.jpg" alt="図書館での学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_13.jpg" alt="スマホで学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_14.jpg" alt="グループ学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_15.jpg" alt="夜間学習"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_16.jpg" alt="資格勉強"></div>
+      <div class="photo-item"><img src="../assets/photos/photo_17.jpg" alt="オンライン学習"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section section-light">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">TESTIMONIALS</div>
+      <h2 class="section-h2">利用者の<span>声</span></h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-photo"><img src="../assets/photos/photo_18.jpg" alt="ユーザー1"></div>
+          <div>
+            <div class="testimonial-name">田中 さくら</div>
+            <div class="testimonial-role">大学2年生 / 英語学習中</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">診断結果で「視覚理解型」だとわかり、マインドマップを取り入れたら英単語の暗記スピードが倍になりました！</div>
+        <div class="testimonial-result">📈 TOEIC 680→820点に向上</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-photo"><img src="../assets/photos/photo_19.jpg" alt="ユーザー2"></div>
+          <div>
+            <div class="testimonial-name">鈴木 拓也</div>
+            <div class="testimonial-role">社会人5年目 / 簿記3級取得</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">「ポモドーロ集中型」と診断されてタイマー勉強法を実践。仕事後の疲れた状態でも集中できるようになりました。</div>
+        <div class="testimonial-result">📚 簿記3級 2ヶ月で一発合格</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-photo"><img src="../assets/photos/photo_20.jpg" alt="ユーザー3"></div>
+          <div>
+            <div class="testimonial-name">佐藤 美咲</div>
+            <div class="testimonial-role">中学3年生 / 受験生</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-text">自分が「アウトプット型」だと知って友達に説明する勉強法を試したら、数学の理解がぐんと深まりました。</div>
+        <div class="testimonial-result">🎯 志望校合格を目指して猛勉強中</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Additional Photos -->
+<section class="section section-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:center;">
+      <div style="border-radius:20px;overflow:hidden;height:280px;">
+        <img src="../assets/photos/photo_05.jpg" alt="学習の実例1" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div style="border-radius:20px;overflow:hidden;height:280px;">
+        <img src="../assets/photos/photo_06.jpg" alt="学習の実例2" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="background:var(--primary-light);border-radius:16px;padding:24px;">
+          <div style="font-size:13px;color:var(--primary);font-weight:700;margin-bottom:6px;">POINT 01</div>
+          <div style="font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;">登録不要・完全無料</div>
+          <div style="font-size:14px;color:var(--text-2);">アカウント作成不要。ブラウザからすぐに始められます。</div>
+        </div>
+        <div style="background:#D1FAE5;border-radius:16px;padding:24px;">
+          <div style="font-size:13px;color:#059669;font-weight:700;margin-bottom:6px;">POINT 02</div>
+          <div style="font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;">科学的根拠に基づく</div>
+          <div style="font-size:14px;color:var(--text-2);">認知科学・教育心理学の知見を活用した信頼性の高い診断。</div>
+        </div>
+        <div style="background:#FEF3C7;border-radius:16px;padding:24px;">
+          <div style="font-size:13px;color:#D97706;font-weight:700;margin-bottom:6px;">POINT 03</div>
+          <div style="font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;">すぐに実践できる</div>
+          <div style="font-size:14px;color:var(--text-2);">診断後すぐに使える具体的な勉強法・ツールを提案します。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo gallery 2 -->
+<section class="section section-light">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;">
+      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_21.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_22.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_15.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_16.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:12px;overflow:hidden;aspect-ratio:1;"><img src="../assets/photos/photo_17.jpg" alt="学習シーン" style="width:100%;height:100%;object-fit:cover;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-white" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-h2">よくある<span>質問</span></h2>
+    </div>
+    <div class="faq-list" style="max-width:760px;margin:0 auto;">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          学習スタイル診断は無料で使えますか？
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a">はい、完全無料・登録不要です。ブラウザからすぐに利用できます。個人情報の入力は一切不要で、全ての処理はブラウザ内で完結します。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          診断にどれくらい時間がかかりますか？
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a">診断は5問の質問に答えるだけで、約1〜3分で完了します。選択形式なので、直感的に答えられます。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          スマートフォンでも使えますか？
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a">はい、スマートフォン・タブレット・PCすべてに対応しています。モバイルファースト設計で、通勤中や休憩時間にも利用できます。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          何度でも診断できますか？
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a">何度でも診断できます。学習状況や目標が変わったときに再診断することで、最新の自分に合った学習法を見つけられます。診断履歴もブラウザに保存されます。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          診断結果は共有できますか？
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a">はい、X（Twitter）やLINEで診断結果をシェアできます。友人・クラスメートと学習スタイルを比較して、お互いに最適な学習環境を探すこともできます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="bottom-cta">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="bottom-cta-label">FREE DIAGNOSIS — NO REGISTRATION REQUIRED</div>
+    <h2 class="bottom-cta-h2">あなたに合う勉強法を<br>今すぐ見つけよう</h2>
+    <p class="bottom-cta-sub">3分の診断で、学習効率を最大化する専用メソッドが手に入ります</p>
+    <a href="/study-method-advisor/" class="bottom-cta-btn">
+      <span>📚</span>
+      無料で診断を始める
+    </a>
+    <div class="bottom-cta-note">登録不要・完全無料 · 2,847人が利用済み</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">📚 学習スタイル診断</div>
+  <div class="footer-links">
+    <a href="https://appadaycreator.com/">AppADayCreator</a>
+    <a href="/study-method-advisor/privacy-policy.html">プライバシーポリシー</a>
+    <a href="/study-method-advisor/terms.html">利用規約</a>
+    <a href="/study-method-advisor/contact.html">お問い合わせ</a>
+  </div>
+  <div class="footer-copy">© 2026 AppADayCreator. All services are free.</div>
+</footer>
+
+<script>
+function toggleFaq(btn){
+  const item = btn.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+}
+// Back to top
+window.addEventListener('scroll',function(){
+  const btn=document.getElementById('btt');
+  if(btn) btn.style.display=window.scrollY>400?'flex':'none';
+});
+</script>
+<a href="#" id="btt" aria-label="ページトップへ" style="display:none;position:fixed;bottom:24px;right:20px;background:#4F46E5;color:#fff;border-radius:50%;width:48px;height:48px;align-items:center;justify-content:center;font-size:20px;box-shadow:0 4px 12px rgba(79,70,229,.4);z-index:9000;">↑</a>
+</body>
+</html>
